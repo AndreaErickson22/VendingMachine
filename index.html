@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-12"></div>
+      <h1>Vending Machine</h1>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-12"></div>
+      <button onclick="app.controllers.vendrController.setTargetItem('a1')" class="btn btn-lg btn-success mx-2">A1</button>
+      <button onclick="app.controllers.vendrController.setTargetItem('a2')" class="btn btn-lg btn-success mx-2">A2</button>
+      <button onclick="app.controllers.vendrController.setTargetItem('a3')" class="btn btn-lg btn-success mx-2">A3</button>
+    </div>
+  </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-12"></div>
+      <h1 id="mes">Press Button for Item</h1>
+    </div>
+  </div>
+  <div>
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-12"></div>
+        <h1>Balance $<span id="bal">_</span></h1>
+
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="col-12"></div>
+            <button onclick="app.controllers.vendrController.addQuarter()" class="btn btn-lg btn-success mx-2">Add
+              Quarter</button>
+            <button onclick="app.controllers.vendrController.addDollar()" class="btn btn-lg btn-success mx-2">Add
+              Dollar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script type="module" src="app/main.js"></script>
+</body>
+
+</html>
